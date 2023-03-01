@@ -11,7 +11,8 @@ const server = app.listen(PORT, () => console.log(`Listening on http://localhost
 const socket = require("socket.io");
 const io = socket(server, {
 	cors: {
-		origin: "https://battleship-client-test.vercel.app/",
+		// origin: "https://battleship-client-test.vercel.app/",
+		origin: "http://localhost:3000",
 	},
 });
 
